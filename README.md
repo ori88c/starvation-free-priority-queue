@@ -18,7 +18,7 @@ This balanced approach ensures fairness while maintaining the priority order, pr
 
 ## Key Features :sparkles:<a id="key-features"></a>
 
-- __Starvatopm Free__: A user-defined `maxDeferment` parameter ensures that low-priority items are delayed by **no more than** `maxDeferment` pop attempts. This balanced approach makes the implementation ideal for task scheduling where fairness is critical, while still honoring priorities, however in batches which are determined according to arrival time.
+- __Starvation Free__: A user-defined `maxDeferment` parameter ensures that low-priority items are delayed by **no more than** `maxDeferment` pop attempts. This balanced approach makes the implementation ideal for task scheduling where fairness is critical, while still honoring priorities, however in batches which are determined according to arrival time.
 - __Efficiency :gear:__: The push operation has a worst-case complexity of O(1). The pop operation features amortized complexity of O(log(`maxDeferment`)), a best-case complexity of O(1), and a worst-case complexity of O(`maxDeferment` * log(`maxDeferment`)) when a new frontier is populated.
 - __Comprehensive Documentation :books:__: The class is thoroughly documented, enabling IDEs to provide helpful tooltips that enhance the coding experience.
 - __Tests :test_tube:__: **Fully covered** by comprehensive unit tests.
